@@ -1,0 +1,41 @@
+@import '../../globalStyles/variables';
+@import '../../globalStyles/functions';
+
+.contact-section{
+    &-container{
+        background-color: $green;
+        width: fit-content;
+        height: 100%;
+        border-top-left-radius: toRem(32);
+        border-bottom-left-radius: toRem(32);
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        .divider{
+            height: toRem(21);
+            background-color: $gray;
+            width: 100%;
+            margin-top: toRem(16);
+            margin-bottom: toRem(16);
+        }
+    }
+
+    &--bottom{
+        margin-bottom: toRem(32);
+    }
+
+    padding: toRem(16);
+
+    &__contact{
+        color: white;
+        margin-bottom: toRem(16);
+
+        img{
+            margin-right: toRem(5);
+        }
+        p{
+            margin-bottom: toRem(16);
+        }
+    }
+}
