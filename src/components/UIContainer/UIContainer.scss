@@ -1,0 +1,10 @@
+@import '../../globalStyles/variables';
+@import '../../globalStyles/functions';
+
+.ui-container{
+    background-color: $cardBackground;
+    border-radius: toRem(32);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+    height: 80vh;
+    width: 80vw;
+}

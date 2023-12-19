@@ -1,0 +1,29 @@
+@import './functions';
+@import './mixins';
+
+$primary-font: 'Poppins', sans-serif;
+// $secondary-font: 'Lato', sans-serif;
+
+body{
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: toRem(16);
+    font-family: $primary-font;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: toRem(19);
+    margin: 0;
+    font-family: $primary-font;
+
+    @include mdMinBreakPoint {
+        font-size: toRem(46);
+        letter-spacing: toRem(2);
+    }
+}
+
+.body-bold{
+    font-weight: 600;
+}
