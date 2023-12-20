@@ -1,0 +1,20 @@
+@import '../../globalStyles/functions';
+
+.user-image{
+    max-width: toRem(370);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-left: -10%;
+
+    // top: 50%;
+    // left: 100%;
+    // transform: translate(-35%, -50%);
+    // position: absolute;
+
+    img{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
