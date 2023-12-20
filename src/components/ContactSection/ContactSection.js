@@ -3,7 +3,6 @@ import emailIcon from '../../assets/icons/email.svg';
 import phoneIcon from '../../assets/icons/phone.svg';
 import linkedinIcon from '../../assets/icons/linkedin.svg';
 import githubIcon from '../../assets/icons/github.svg';
-import userPhoto from '../../assets/images/user-photo.png';
 
 function ContactSection() {
   return (
@@ -25,8 +24,6 @@ function ContactSection() {
                 <p className='contact-section__contact-social'><img src={linkedinIcon} alt="Linked icon" /><img src={githubIcon} alt="Github icon" /></p>
             </div>
         </div>
-        {/* <div className='contact-section-container__user-image' style={{backgroundImage: `url(${userPhoto})`}}></div> */}
-        <img className='contact-section-container__user-image' src={userPhoto} alt='User image' />
     </div>
   );
 }
