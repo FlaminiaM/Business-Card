@@ -1,11 +1,26 @@
 @import '../../globalStyles/variables';
 @import '../../globalStyles/functions';
+@import '../../globalStyles/mixins';
 
 .ui-container{
     background-color: $cardBackground;
     border-radius: toRem(32);
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
     height: 80vh;
-    width: 80vw;
+    width: 90vw;
     display: flex;
+    flex-direction: column;
+
+
+    @include mdMinBreakPoint{
+        width: 90vw;
+        flex-direction: row;
+    }
+
+    @include lgMinBreakPoint{
+        width: 80vw;
+    }
+    @include xlMinBreakPoint {
+        width: 70vw;
+    }
 }

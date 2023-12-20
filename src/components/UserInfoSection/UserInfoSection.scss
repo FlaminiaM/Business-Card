@@ -1,14 +1,29 @@
 @import '../../globalStyles/functions';
+@import '../../globalStyles/mixins';
 
 .user-info{
     &-container{
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-top: toRem(24);
+
+        @include mdMinBreakPoint{
+            width: 60%;
+            padding-top: 0;
+        }
     }
     &-section{
         padding-right: toRem(40);
+        padding-left: toRem(40);
+        br{
+            display: none;
+            @include mdMinBreakPoint{
+                display: block;
+            }
+        }
+
         ul{
             list-style-position: inside;
         }
@@ -17,6 +32,10 @@
         }
         p{
             line-height: normal;
+        }
+
+        .txt-green{
+            margin-right: toRem(10);
         }
     }
 }

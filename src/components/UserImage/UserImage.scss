@@ -1,20 +1,17 @@
 @import '../../globalStyles/functions';
+@import '../../globalStyles/mixins';
 
 .user-image{
-    max-width: toRem(370);
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin-left: -10%;
+    width: toRem(150);
+    height: toRem(150);
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin: auto;
 
-    // top: 50%;
-    // left: 100%;
-    // transform: translate(-35%, -50%);
-    // position: absolute;
-
-    img{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+    @include mdMinBreakPoint{
+        width: toRem(200);
+        height: toRem(200);
     }
 }
