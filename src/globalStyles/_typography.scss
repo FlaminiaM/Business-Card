@@ -14,10 +14,15 @@ body{
 h1 {
     font-style: normal;
     font-weight: 600;
-    font-size: toRem(32);
+    font-size: toRem(24);
     margin: 0;
     font-family: $primary-font;
     line-height: toRem(24);
+
+    @include mdMinBreakPoint {
+        font-size: toRem(32);
+    }
+
 
     @include mdMinBreakPoint {
         font-size: toRem(46);

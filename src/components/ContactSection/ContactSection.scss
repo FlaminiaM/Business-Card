@@ -2,7 +2,22 @@
 @import '../../globalStyles/functions';
 @import '../../globalStyles/mixins';
 
+.contact-sections{
+    width: 80%;
+
+    @include smMinBreakPoint{
+        width: 70%;
+    }
+
+    @include mdMinBreakPoint{
+        width: 100%;
+    }
+}
 .contact-section{
+    font-size: toRem(14);
+    @include mdMinBreakPoint{
+        font-size: toRem(16);
+    }
     &-container{
         background-color: $green;
         width: 100%;
@@ -13,12 +28,16 @@
         flex-direction: row;
 
         @include mdMinBreakPoint{
-            width: 40%;
+            width: 50%;
             flex-direction: column;
             border-top-left-radius: toRem(32);
             border-bottom-left-radius: toRem(32);
             border-top-right-radius: toRem(0);
             height: 100%;
+        }
+
+        @include lgMinBreakPoint{
+            width: 40%;
         }
 
         .divider{
@@ -37,7 +56,7 @@
             margin-bottom: toRem(32);
         }
     }
-    padding: toRem(24) toRem(24) toRem(16) toRem(16);
+    padding: toRem(16) toRem(24) toRem(0) toRem(16);
     @include mdMinBreakPoint{
         padding: toRem(16) toRem(16) toRem(16) toRem(40);
     }
@@ -50,7 +69,10 @@
             margin-right: toRem(5);
         }
         p{
-            margin-bottom: toRem(16);
+            margin-bottom: toRem(8);
+            @include smMinBreakPoint{
+                margin-bottom: toRem(16);
+            }
         }
     }
 }

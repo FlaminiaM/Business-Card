@@ -2,13 +2,18 @@
 @import '../../globalStyles/mixins';
 
 .user-image{
-    width: toRem(150);
-    height: toRem(150);
+    width: toRem(50);
+    height: toRem(50);
     border-radius: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
     margin: auto;
+
+    @include smMinBreakPoint{
+        width: toRem(150);
+        height: toRem(150);
+    }
 
     @include mdMinBreakPoint{
         width: toRem(200);
