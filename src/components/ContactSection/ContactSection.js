@@ -26,7 +26,10 @@ function ContactSection() {
             <div className='contact-section contact-section--bottom'>
                 <div className='contact-section__contact bold'>
                     <p className='bold'>Find me on</p>
-                    <p className='contact-section__contact-social'><img src={linkedinIcon} alt="Linked icon" /><img src={githubIcon} alt="Github icon" /></p>
+                    <p className='contact-section__contact-social'>
+                        <a href='https://www.linkedin.com/in/flaminiamazzitelli/'><img src={linkedinIcon} alt="Linked icon" /></a>
+                        <a href='https://github.com/FlaminiaM'><img src={githubIcon} alt="Github icon" /></a>
+                    </p>
                 </div>
             </div>
         </div>
